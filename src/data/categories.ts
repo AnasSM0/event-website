@@ -16,7 +16,7 @@ export const categoriesData: Record<string, CategoryData> = {
     subtitle: "Premium Dining Essentials",
     description:
       "Elevate your dining experience with our extensive collection of high-quality crockery. From fine china for elegant banquets to durable stoneware for daily operations, Anas Fabrics provides tableware that combines aesthetics with resilience.",
-    heroImage: "https://images.unsplash.com/photo-1556912386-3f69527d81a5?w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1603194562237-7749bd003463?w=1920&q=80",
     services: [
       "Fine dining dinner sets",
       "Buffet ware & serving platters",
@@ -39,7 +39,7 @@ export const categoriesData: Record<string, CategoryData> = {
     subtitle: "Presentation Perfected",
     description:
       "Presentation is everything. Our range of serving products ensures that every dish is showcased beautifully. We offer a variety of trays, bowls, stands, and specialized serving gear tailored for professional catering environments.",
-    heroImage: "https://images.unsplash.com/photo-1574966739908-0113271777d5?w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=1920&q=80",
     services: [
       "Stainless steel trays & platters",
       "Wooden & slate serving boards",
@@ -62,7 +62,7 @@ export const categoriesData: Record<string, CategoryData> = {
     subtitle: "Professionalism in Every Stitch",
     description:
       "Dress your team for success with our professionally designed staff uniforms. We provide high-quality, comfortable, and stylish uniforms for chefs, waiters, housekeeping, and front-of-house staff, ensuring a cohesive brand image.",
-    heroImage: "https://images.unsplash.com/photo-1601614271818-498c4d51574d?w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1595475207225-428b62bda831?w=1920&q=80",
     services: [
       "Chef jackets & aprons",
       "Waiter vests & shirts",
@@ -85,7 +85,7 @@ export const categoriesData: Record<string, CategoryData> = {
     subtitle: "Comfort Meets Durability",
     description:
       "Furnish your spaces with our premium selection of event and hospitality furniture. Whether for a banquet hall, restaurant, or outdoor marquee, our furniture combines comfort, style, and industrial-grade durability.",
-    heroImage: "https://images.unsplash.com/photo-1519225421980-715cb0202128?w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1920&q=80",
     services: [
       "Banquet chairs & tables",
       "Outdoor seating solutions",
@@ -131,7 +131,7 @@ export const categoriesData: Record<string, CategoryData> = {
     subtitle: "Fabric of Elegance",
     description:
       "Transform any table setting with our luxurious table linens. Available in a vast array of colors, textures, and fabrics, our linens are designed to withstand frequent commercial laundering while maintaining their feel and finish.",
-    heroImage: "https://images.unsplash.com/photo-1634710186105-728b1858bb6a?w=1920&q=80",
+    heroImage: "https://images.unsplash.com/photo-1562002591-627c264a7872?w=1920&q=80",
     services: [
       "Tablecloths & overlays",
       "Napkins & runners",

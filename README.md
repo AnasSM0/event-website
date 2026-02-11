@@ -1,73 +1,96 @@
-# Welcome to your Lovable project
+# Anas Fabrics - Premium Event Supplies & Catering
 
-## Project info
+Welcome to the official website repository for **Anas Fabrics**. We specialize in providing high-quality event materials, including crockery, furniture, linens, and catering equipment for weddings, corporate events, and parties.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Features
 
-## How can I edit this code?
+-   **Modern & Responsive Design**: Built with React and Tailwind CSS for a seamless experience on all devices.
+-   **Product Gallery**: A dynamic gallery showcasing our extensive inventory (Crockery, Furniture, Linens, etc.) with category filtering.
+-   **Optimized Performance**: Images are automatically optimized during the build process for fast loading times.
+-   **WhatsApp Integration**: Floating WhatsApp widget for direct customer inquiries.
+-   **Contact & Location**: Easy access to our contact details and business location.
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+-   **Frontend**: [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+-   **Build Tool**: [Vite](https://vitejs.dev/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **UI Components**: [Shadcn UI](https://ui.shadcn.com/) (Radix Primitives)
+-   **Icons**: [Lucide React](https://lucide.dev/)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 📦 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+-   [Node.js](https://nodejs.org/) (Version 18 or higher)
+-   npm (comes with Node.js)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/anas-fabrics.git
+    cd anas-fabrics
+    ```
 
-Follow these steps:
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3.  **First-Time Setup (Windows)**:
+    Run the included setup script to organize images and build the project:
+    ```cmd
+    setup.bat
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+To start the local development server:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Visit `http://localhost:8080` (or the port shown in your terminal) to view the site.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🖼️ Image Optimization
 
-**Use GitHub Codespaces**
+This project includes automated image optimization to ensure high performance.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+-   **Build Time**: Images are compressed automatically when you run `npm run build`.
+-   **Source Optimization**: You can manually optimize the source images in `public/gallery` by running:
+    ```bash
+    node optimize-images.js
+    ```
+    *Note: The images in this repository have already been optimized.*
 
-## What technologies are used for this project?
+## 🚀 Deployment
 
-This project is built with:
+This project is ready for deployment on platforms like **Vercel** or **Netlify**.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1.  Push your code to a GitHub repository.
+2.  Connect your repository to Vercel/Netlify.
+3.  The platform will automatically detect `vite` and run `npm run build`.
+4.  Your site will be live!
 
-## How can I deploy this project?
+**Note**: Do NOT push the `dist` folder to GitHub. It is a generated build artifact.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📂 Project Structure
 
-## Can I connect a custom domain to my Lovable project?
+```
+event-website/
+├── public/              # Static assets (Favicons, Gallery Images)
+├── src/
+│   ├── components/      # Reusable UI components (Navbar, Footer, etc.)
+│   ├── data/            # Static data files (Gallery items, Categories)
+│   ├── pages/           # Page components (Home, About, Gallery, Contact)
+│   └── index.css        # Global styles and Tailwind directives
+├── optimize-images.js   # Script for source image optimization
+├── setup.bat            # Windows setup helper script
+└── vite.config.ts       # Vite configuration (Plugins, Port, Aliases)
+```
 
-Yes, you can!
+## 📄 License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is proprietary to Anas Fabrics.
