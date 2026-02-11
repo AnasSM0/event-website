@@ -22,14 +22,14 @@ const About = () => {
               <div>
                 <p className="text-sm font-semibold uppercase tracking-widest text-primary">Since 2010</p>
                 <h2 className="mt-2 font-heading text-3xl font-bold text-offwhite md:text-4xl">
-                  A Legacy of Luxury
+                  A Legacy of Reliability
                 </h2>
                 <div className="mt-2 h-0.5 w-12 bg-primary" />
                 <p className="mt-6 text-base leading-relaxed text-offwhite/70">
-                  Founded with a passion for perfection, Shaheen has grown from a boutique catering service into one of the region's most sought-after event management firms. Our journey has been defined by an unwavering commitment to elegance, creativity, and client satisfaction.
+                  Anas Fabrics is a trusted provider of high-quality industrial supplies, catering equipment, and business support services. With a strong focus on reliability and operational excellence, we support businesses and event operations with durable, professional-grade solutions.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-offwhite/70">
-                  Over the years, we have orchestrated hundreds of weddings, corporate galas, and private celebrations — each one a unique masterpiece. Our team of seasoned professionals brings together culinary artistry, design excellence, and logistical precision to craft events that are nothing short of extraordinary.
+                  Our operations cover a wide range of essential supplies including crockery, kitchen equipment, uniforms, linens, and event infrastructure. We are committed to delivering consistent quality, dependable service, and long-term business partnerships built on trust and performance.
                 </p>
               </div>
             </ScrollReveal>
@@ -37,8 +37,8 @@ const About = () => {
             <ScrollReveal delay={0.2}>
               <div className="overflow-hidden rounded-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80"
-                  alt="Shaheen luxury event setup"
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+                  alt="Anas Fabrics warehouse"
                   className="h-[400px] w-full object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
                 />
@@ -60,9 +60,9 @@ const About = () => {
 
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             {[
-              { icon: Target, title: "Precision", description: "Every detail is meticulously planned and executed to create a seamless experience from start to finish." },
-              { icon: Eye, title: "Vision", description: "We see beyond the ordinary, transforming venues into immersive spaces that tell your unique story." },
-              { icon: Sparkles, title: "Excellence", description: "We hold ourselves to the highest standards, because your event deserves nothing less than perfection." },
+              { icon: Target, title: "Precision", description: "We deliver exactly what you need, when you need it, ensuring your operations never miss a beat." },
+              { icon: Eye, title: "Quality", description: "Our products are sourced and fabricated to meet the rigors of professional and industrial use." },
+              { icon: Sparkles, title: "Partnership", description: "We build long-term relationships, understanding your business needs to provide tailored support." },
             ].map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 0.15}>
                 <div className="rounded-xl border border-offwhite/10 bg-charcoal p-10 text-center transition-all hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5">

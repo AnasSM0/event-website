@@ -5,17 +5,20 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const navLinks = [
   { label: "Home", path: "/" },
-  { label: "About", path: "/about" },
+  { label: "About Us", path: "/about" },
   { label: "Gallery", path: "/gallery" },
-  { label: "Contact", path: "/contact" },
+  { label: "Contact Us", path: "/contact" },
 ];
 
 const categoryLinks = [
-  { label: "Weddings", path: "/categories/weddings" },
-  { label: "Corporate Events", path: "/categories/corporate" },
-  { label: "Furniture Rental", path: "/categories/furniture" },
-  { label: "Staffing", path: "/categories/staffing" },
+  { label: "Crockery", path: "/categories/crockery" },
+  { label: "Serving Products", path: "/categories/serving-products" },
+  { label: "Staff Uniforms", path: "/categories/staff-uniforms" },
+  { label: "Furniture", path: "/categories/furniture" },
   { label: "Kitchen Equipment", path: "/categories/kitchen-equipment" },
+  { label: "Table Linens", path: "/categories/table-linens" },
+  { label: "Marquee Fabrication", path: "/categories/marquee-fabrication" },
+  { label: "Room Linens", path: "/categories/room-linens" },
 ];
 
 const Navbar = () => {
@@ -45,7 +48,7 @@ const Navbar = () => {
       <nav className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link to="/" className="font-heading text-2xl font-bold tracking-wide text-offwhite">
-          Shaheen
+          Anas Fabrics
         </Link>
 
         {/* Desktop Links */}

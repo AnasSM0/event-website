@@ -4,31 +4,38 @@ import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
-import { UtensilsCrossed, Award, Users, Clock, Heart, Shield, Star, Gem } from "lucide-react";
+import { UtensilsCrossed, Award, Users, Clock, Shield, Star, Shirt, Armchair, Refrigerator, Scroll, Tent, Layers, Utensils, ConciergeBell, BedDouble } from "lucide-react";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&q=80",
-    title: "Unforgettable Weddings",
-    subtitle: "Crafted with love, delivered with perfection",
+    image: "https://images.unsplash.com/photo-1556912386-3f69527d81a5?w=1920&q=80",
+    title: "Premium Industrial Catering Supplies",
+    subtitle: "High-quality equipment for professional operations",
   },
   {
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80",
-    title: "Corporate Excellence",
-    subtitle: "Events that elevate your brand",
+    image: "https://images.unsplash.com/photo-1519225421980-715cb0202128?w=1920&q=80",
+    title: "Reliable Business Support Services",
+    subtitle: "Partnering with you for operational excellence",
   },
   {
-    image: "https://images.unsplash.com/photo-1555244162-803834f70033?w=1920&q=80",
-    title: "Exquisite Catering",
-    subtitle: "Culinary artistry for every palate",
+    image: "https://images.unsplash.com/photo-1478146059778-26028b07395a?w=1920&q=80",
+    title: "Event & Marquee Infrastructure",
+    subtitle: "Fabrication and setup for events of any scale",
   },
 ];
 
 const services = [
-  { icon: UtensilsCrossed, title: "Gourmet Catering", description: "Custom menus crafted by award-winning chefs for every occasion." },
-  { icon: Heart, title: "Wedding Planning", description: "End-to-end wedding design and coordination for your perfect day." },
-  { icon: Users, title: "Corporate Events", description: "Professional event management that amplifies your brand presence." },
-  { icon: Gem, title: "Luxury Rentals", description: "Premium furniture and décor to transform any venue into a masterpiece." },
+  { icon: Utensils, title: "Crockery", description: "Elegant and durable dinnerware for all occasions.", link: "/categories/crockery" },
+  { icon: Shirt, title: "Staff Uniforms", description: "Professional attire for your hospitality team.", link: "/categories/staff-uniforms" },
+  { icon: Armchair, title: "Furniture", description: "Premium tables, chairs, and lounge setups.", link: "/categories/furniture" },
+  { icon: Refrigerator, title: "Kitchen Equipment", description: "Commercial-grade appliances for mass catering.", link: "/categories/kitchen-equipment" },
+  { icon: Scroll, title: "Table Linens", description: "Luxurious tablecloths, napkins, and runners.", link: "/categories/table-linens" },
+  { icon: Tent, title: "Marquee Fabrication", description: "Custom tents and structures for outdoor events.", link: "/categories/marquee-fabrication" },
+  { icon: Layers, title: "Carpet", description: "Red carpets, exhibition flooring, and grass.", link: "/categories/carpet" },
+  { icon: UtensilsCrossed, title: "Kitchen Utensils", description: "Essential tools for culinary preparation.", link: "/categories/kitchen-utensils" },
+  { icon: Utensils, title: "Cutlery", description: "Stainless steel flatware in various styles.", link: "/categories/cutlery" },
+  { icon: ConciergeBell, title: "Serving Products", description: "Trays, stands, and chafing dishes.", link: "/categories/serving-products" },
+  { icon: BedDouble, title: "Room Linens", description: "Premium bedding and bath linens for hotels.", link: "/categories/room-linens" },
 ];
 
 const whyUs = [
@@ -127,14 +134,16 @@ const Home = () => {
 
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {services.map((s, i) => (
-              <ScrollReveal key={s.title} delay={i * 0.1}>
-                <div className="group rounded-xl border border-offwhite/10 bg-charcoal-light p-8 text-center transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 hover:scale-105">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
-                    <s.icon className="h-6 w-6" />
+              <ScrollReveal key={s.title} delay={i * 0.05}>
+                <Link to={s.link} className="block h-full">
+                  <div className="group h-full rounded-xl border border-offwhite/10 bg-charcoal-light p-6 text-center transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 hover:scale-105">
+                    <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary/20">
+                      <s.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="mt-4 font-heading text-lg font-semibold text-offwhite">{s.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-offwhite/60">{s.description}</p>
                   </div>
-                  <h3 className="mt-6 font-heading text-lg font-semibold text-offwhite">{s.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-offwhite/60">{s.description}</p>
-                </div>
+                </Link>
               </ScrollReveal>
             ))}
           </div>

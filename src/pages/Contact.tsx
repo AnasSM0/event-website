@@ -62,7 +62,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-offwhite">Address</h4>
-                      <p className="mt-1 text-sm text-offwhite/60">123 Luxury Avenue, Dubai, UAE</p>
+                      <p className="mt-1 text-sm text-offwhite/60">Zia Colony Industrial Area, Korangi</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -71,7 +71,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-offwhite">Phone</h4>
-                      <p className="mt-1 text-sm text-offwhite/60">+971 50 123 4567</p>
+                      <p className="mt-1 text-sm text-offwhite/60">+923002714890</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -80,7 +80,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-medium text-offwhite">Email</h4>
-                      <p className="mt-1 text-sm text-offwhite/60">info@shaheen-events.com</p>
+                      <p className="mt-1 text-sm text-offwhite/60">anasiqbal19@gmail.com</p>
                     </div>
                   </div>
                 </div>
