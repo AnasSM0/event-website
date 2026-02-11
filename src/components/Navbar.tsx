@@ -47,8 +47,8 @@ const Navbar = () => {
     >
       <nav className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link to="/" className="font-heading text-2xl font-bold tracking-wide text-offwhite">
-          Anas Fabrics
+        <Link to="/" className="flex items-center gap-2">
+          <img src="/af logo1.png" alt="Anas Fabrics Logo" className="h-12 w-auto object-contain" />
         </Link>
 
         {/* Desktop Links */}
