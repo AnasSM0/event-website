@@ -8,7 +8,7 @@ import { UtensilsCrossed, Award, Users, Clock, Shield, Star, Shirt, Armchair, Re
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1556912386-3f69527d81a5?w=1920&q=80",
+    image: "https://www.gulffoodsuppliesllc.com/wp-content/uploads/2024/04/Industrial-Catering-1.jpg",
     title: "Premium Industrial Catering Supplies",
     subtitle: "High-quality equipment for professional operations",
   },
