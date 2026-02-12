@@ -7,12 +7,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Name must be at least 2 characters").max(100),
   eventDate: z.string().min(1, "Please select an event date"),
   guestCount: z.string().min(1, "Please enter the guest count"),
+  category: z.string().min(1, "Please select an inquiry category"),
   message: z.string().trim().min(10, "Message must be at least 10 characters").max(1000),
 });
 
@@ -23,10 +25,20 @@ const Contact = () => {
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
-    defaultValues: { name: "", eventDate: "", guestCount: "", message: "" },
+    defaultValues: { name: "", eventDate: "", guestCount: "", category: "", message: "" },
   });
 
-  const onSubmit = (_data: ContactFormData) => {
+  const onSubmit = (data: ContactFormData) => {
+    const whatsappMessage = `*New Web Inquiry*
+----------------
+*Name:* ${data.name}
+*Category:* ${data.category}
+*Date:* ${data.eventDate}
+*Guest Count:* ${data.guestCount}
+*Message:* ${data.message}`;
+
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    window.open(`https://wa.me/923002714890?text=${encodedMessage}`, "_blank");
     setSubmitted(true);
   };
 
@@ -176,6 +188,32 @@ const Contact = () => {
                             )}
                           />
                         </div>
+                        <FormField
+                          control={form.control}
+                          name="category"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel className="text-offwhite/80">Inquiry Category</FormLabel>
+                              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                <FormControl>
+                                  <SelectTrigger className="border-offwhite/10 bg-charcoal text-offwhite focus:ring-primary">
+                                    <SelectValue placeholder="Select a category" />
+                                  </SelectTrigger>
+                                </FormControl>
+                                <SelectContent>
+                                  <SelectItem value="Crockery">Crockery</SelectItem>
+                                  <SelectItem value="Furniture">Furniture</SelectItem>
+                                  <SelectItem value="Marquee/Tent">Marquee / Tent Structure</SelectItem>
+                                  <SelectItem value="Linens">Table & Room Linens</SelectItem>
+                                  <SelectItem value="Kitchen Equipment">Kitchen Equipment</SelectItem>
+                                  <SelectItem value="Full Event Setup">Full Event Infrastructure</SelectItem>
+                                  <SelectItem value="Other">Other</SelectItem>
+                                </SelectContent>
+                              </Select>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
                         <FormField
                           control={form.control}
                           name="message"

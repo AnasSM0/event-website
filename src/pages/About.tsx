@@ -37,7 +37,7 @@ const About = () => {
             <ScrollReveal delay={0.2}>
               <div className="overflow-hidden rounded-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+                  src="/about us image.png"
                   alt="Anas Fabrics warehouse"
                   className="h-[400px] w-full object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
