@@ -18,6 +18,7 @@ const categoryLinks = [
   { label: "Kitchen Equipment", path: "/categories/kitchen-equipment" },
   { label: "Table Linens", path: "/categories/table-linens" },
   { label: "Marquee Fabrication", path: "/categories/marquee-fabrication" },
+  { label: "Tent Accessories", path: "/categories/tent-accessories" },
   { label: "Room Linens", path: "/categories/room-linens" },
 ];
 

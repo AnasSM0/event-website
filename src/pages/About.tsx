@@ -9,7 +9,7 @@ const About = () => {
         <div className="container mx-auto px-6 text-center">
           <ScrollReveal>
             <p className="text-sm font-semibold uppercase tracking-widest text-primary">About Us</p>
-            <h1 className="mt-2 font-heading text-5xl font-bold text-offwhite md:text-6xl">Our Story</h1>
+            <h1 className="mt-2 font-heading text-5xl font-bold text-offwhite md:text-6xl">Your Supply Partner</h1>
           </ScrollReveal>
         </div>
       </section>
@@ -26,7 +26,7 @@ const About = () => {
                 </h2>
                 <div className="mt-2 h-0.5 w-12 bg-primary" />
                 <p className="mt-6 text-base leading-relaxed text-offwhite/70">
-                  Anas Fabrics is a trusted provider of high-quality industrial supplies, catering equipment, and business support services. With a strong focus on reliability and operational excellence, we support businesses and event operations with durable, professional-grade solutions.
+                  Anas Fabrics is a trusted provider of high-quality industrial supplies, catering equipment, and business support services. With a strong focus on reliability and operational excellence, we serve as a dedicated supply partner for businesses and event professionals, ensuring you have the materials needed to succeed.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-offwhite/70">
                   Our operations cover a wide range of essential supplies including crockery, kitchen equipment, uniforms, linens, and event infrastructure. We are committed to delivering consistent quality, dependable service, and long-term business partnerships built on trust and performance.
